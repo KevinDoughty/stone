@@ -1,0 +1,26 @@
+{
+	"name": "Stone",
+	"version": "0.0.1",
+	"description": "dataviz",
+	"main": "dist/main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "webpack --mode=development",
+		"build": "webpack --mode=production"
+	},
+	"author": "Kevin Doughty",
+	"license": "MIT",
+	"dependencies": {
+		"csv-parse": "^5.0.4",
+		"gaussian": "^1.2.0",
+		"preact": "^10.6.6"
+	},
+	"devDependencies": {
+		"@babel/plugin-transform-react-jsx": "^7.17.3",
+		"@babel/preset-env": "^7.16.11",
+		"babel": "^6.23.0",
+		"babel-loader": "^8.2.3",
+		"webpack": "^5.70.0",
+		"webpack-cli": "^4.9.2"
+	}
+}

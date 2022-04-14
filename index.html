@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stone</title>
+		<style>
+
+body {
+	width:100%;
+	max-width:100%;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+thead, thead tr {
+	background-color: #c0c0c0;
+	letter-spacing: 1px;
+	padding-bottom:1em;
+	margin-bottom:1em;
+	cursor: pointer;
+	user-select: none;
+}
+thead th {
+		height:2em;
+	border-bottom: 1px solid black;
+	padding-left:1em;
+}
+td {
+	padding-left:1em;
+}
+.marker {
+	background-color:yellow;
+	border: 1px solid black;
+	padding-left:0.25em;
+	padding-right:0.25em;
+	padding-bottom:0.1em;
+	border-radius:1em;
+	vertical-align: baseline;
+}
+.hidden {
+	background-color:transparent;
+	color:transparent;
+	border-color:transparent;
+	user-select: none;
+	display:none;
+}
+.padder {
+	color:transparent;
+	user-select: none;
+	display:none;
+}
+@media screen {
+	.padder {
+		display:initial;
+	}
+	.hidden {
+		display:initial;
+	}
+}
+td, th {
+	text-align:left;
+	font-variant: tabular-nums;
+	font-variant-numeric: tabular-nums;
+}
+tr:nth-child(even) {
+	background-color:#f0f0f0;
+}
+table {
+	  border-collapse: collapse;  
+	  background:white;
+}
+section {
+	display: flex;  
+	flex-flow: row wrap;
+	text-align: center;
+	margin-top:32px;
+	margin-bottom:128px;
+	background:rgba(255,255,255,1);
+	padding-top:64px;
+	padding-bottom:64px;
+}
+table {
+	width:100%;
+}
+@media all and (min-width: 600px) {
+	section > div { flex: 1 0 0; }
+}
+svg {
+	width:600px;
+	height:600px;
+	margin-left:16px;
+	margin-right:16px;
+	margin-top:8px;
+				
+}
+section:nth-child(4n+3) {
+	flex-direction:row-reverse;
+}
+.button {
+	margin:12px 24px;
+	border: 2px solid gray;
+	border-radius: 32px;
+	padding: 12px 24px;
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 0 yellow;
+}
+.lit {
+	background: yellow;
+}
+.main {
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+body {
+	perspective: 1px;
+	transform-style: preserve-3d;
+}
+section > div {
+	position: relative;
+	display: block;
+	z-index: 1;
+}
+.main > div {
+	z-index: -1;
+	height: 100%;
+	transform: translateZ(-1px) scale(2);
+	background-size: cover;
+	background-position: center center;
+	position:relative;
+}
+.parallax0 {
+	background: url("./images/strongman0_50.png");
+}
+.parallax1 {
+	background: url("./images/strongman1_50.png");
+}
+.parallax2 {
+	background: url("./images/strongman3_50.png");
+}
+.parallax3 {
+	background: url("./images/strongman4_50.png");
+}
+.parallax4 {
+	background: url("./images/strongman8_50.png");
+}
+.parallax5 {
+	background: url("./images/strongman10_400.png");
+}
+h1 {
+	background:white;
+	font-size:48pt;
+	text-align:center;
+	vertical-align:middle;
+	top:50%;
+	padding:0.5em 0;
+	transform:translate3d(0,-1em, 0);
+	position:relative;
+}
+		</style>
+	</head>
+
+	<body>
+		
+	</body>
+	<script src="dist/main.js"></script>
+</html>
